@@ -36,18 +36,14 @@ public class MoneyTransfer {
             scanner.nextLine();
 
             switch (choice) {
-                case 1:
-                    registerUser(scanner);
-                    break;
-                case 2:
-                    transferMoney(scanner);
-                    break;
-                case 0:
-                    System.out.println("Exiting...");
-                    break;
-                default:
-                    System.out.println("Invalid choice");
-                    break;
+                case 1 -> registerUser(scanner);
+
+                case 2 -> transferMoney(scanner);
+
+                case 0 -> System.out.println("Exiting...");
+
+                default -> System.out.println("Invalid choice");
+
             }
         }
 
